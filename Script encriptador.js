@@ -1,14 +1,18 @@
 const entradaTexto = document.querySelector(".text-input") ;
 const textoResultado = document.querySelector(".texto-salida");
 
-function botonEncriptar(){
+function botonEncriptar()
+{
     const textoEncriptado = encriptar(entradaTexto.value);
     entradaTexto.value = "";
     textoResultado.value = textoEncriptado;
 }
 
-function botonDesencriptar(){
-
+function botonDesencriptar()
+{
+    const textoDesencriptado = desencriptar(entradaTexto.value);
+    entradaTexto.value = "";
+    textoResultado.value = textoDesencriptado;
 }
 
 function botonCopiar(){
@@ -26,12 +30,23 @@ function encriptar(stringEntrada)
             {
                 stringEntrada = stringEntrada.replaceAll(matrizCodigo[index][0], matrizCodigo[index][1]);
             }
-        return stringEntrada;
-    }
+        }
+    return stringEntrada;
 }
 
-function desencriptar(stringSalida){
+function desencriptar(stringSalida)
+{   
+    stringSalida = stringSalida.toLowerCase();
+    let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
 
+    for (let index = 0; index < matrizCodigo.length; index++) 
+    {
+        if (stringSalida.includes(matrizCodigo[index][0]))
+        {
+            stringSalida = stringSalida.replaceAll(matrizCodigo[index][1], matrizCodigo[index][0]);
+        }
+    }
+    return stringSalida;
 }
 
 function copiar() {
