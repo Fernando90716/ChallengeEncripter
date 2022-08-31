@@ -15,24 +15,33 @@
     <header>
         <h1>
             <img class="logo" src="Imagenes/sign-question-icon.png">
-            <a class="recargar" href="index.html"> Encriptador</a>
+            <a class="recargar" href="index.html">Encriptador</a>
         </h1>
     </header>
     <main>
-        <section class="entrada-de-texto">
-
-        </section>
-
-        <section class="resultado-final">
+        <div class="Formularios">
+            <section class="entrada-de-texto">
+                <textarea id="input" class="text-input" placeholder="Estoy encriptando un mensaje..."></textarea>
+                <label class="advertencia" for="input"> <img src="Imagenes/!.png"> letras minusculas y sin acentos
+                </label>
+            </section>
             
-        </section>
-
+            <section class="resultado-final">
+                <textarea id="salida" class="texto-salida"></textarea>
+            </section>
+        </div>
         <div class="botones-interaccion">
+            <input type="button" class="boton-encriptar" value="Encriptar" onclick="botonEncriptar">
 
+            <input type="button" class="boton-desencriptar" value="Desencriptar" onclick="botonDesencriptar">
+
+            <input type="button" class="boton-copiar" value="Copiar" onclick="botonCopiar">
         </div>
     </main>
     <footer>
-
+        <a href="https://github.com/Fernando90716">
+            <img src="Imagenes/GitHub-Mark/PNG/GitHub-Mark-64px.png">
+        </a>
     </footer>
     <script src="Script encriptador.js"></script>
 </body>

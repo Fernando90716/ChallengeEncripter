@@ -1,4 +1,6 @@
-body {
+html, body {
+    margin: 0px;
+    height: 100%;
     font-family: 'DynaPuff', cursive;
 }
 
@@ -19,4 +21,45 @@ header h1 {
 
 .recargar {
     text-decoration: none;
+}
+
+main {
+    background-color: lightblue;
+    position: flex;
+    margin: 0px;
+    height: 70%;
+}
+
+.Formularios {
+    display: flex;
+    height: 100%;
+    padding: 0px 2em;
+}
+
+.entrada-de-texto{
+    width: 50%;
+    height: 100%;
+}
+
+.text-input{
+    width: 95%;
+    height: 60%;
+    border-radius: 35px;
+    background-color: rgb(69, 197, 230);
+    resize: none;
+}
+
+.advertencia {
+    display: block;
+    font-size: 0.8em;
+}
+
+.botones-interaccion {
+    text-align: center;
+}
+
+footer {
+    background-color: lightblue;
+    text-align: center;
+    padding: 2em 0;
 }
