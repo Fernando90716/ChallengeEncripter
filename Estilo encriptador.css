@@ -4,6 +4,16 @@ html, body {
     font-family: 'DynaPuff', cursive;
 }
 
+::-webkit-scrollbar{
+    background-color: lightblue;
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:darkblue;
+    border-radius: 12px;
+}
+
 header {
     background-color: lightblue;
     padding: 3em 0px;
