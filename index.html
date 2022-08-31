@@ -22,8 +22,12 @@
         <div class="Formularios">
             <section class="entrada-de-texto">
                 <textarea id="input" class="text-input" placeholder="Estoy encriptando un mensaje..."></textarea>
-                <label class="advertencia" for="input"> <img src="Imagenes/!.png"> letras minusculas y sin acentos
-                </label>
+                <div class="marca-advertencia">
+                    <img src="Imagenes/!.png">
+                    <label for="input">
+                         <h6>Solo escribir minúsculas y sin acentos</h6>
+                   </label>
+                </div>
             </section>
             
             <section class="resultado-final">
@@ -31,11 +35,11 @@
             </section>
         </div>
         <div class="botones-interaccion">
-            <input type="button" class="boton-encriptar" value="Encriptar" onclick="botonEncriptar">
+            <input type="button" class="boton-encriptar" value="Encriptar" onclick="botonEncriptar()">
 
-            <input type="button" class="boton-desencriptar" value="Desencriptar" onclick="botonDesencriptar">
+            <input type="button" class="boton-desencriptar" value="Desencriptar" onclick="botonDesencriptar()">
 
-            <input type="button" class="boton-copiar" value="Copiar" onclick="botonCopiar">
+            <input type="button" class="boton-copiar" value="Copiar" onclick="botonCopiar()">
         </div>
     </main>
     <footer>

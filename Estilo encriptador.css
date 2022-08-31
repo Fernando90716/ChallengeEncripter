@@ -6,7 +6,7 @@ html, body {
 
 header {
     background-color: lightblue;
-    padding: 3em 1.5em;
+    padding: 3em 0px;
 }
 
 .logo {
@@ -17,6 +17,7 @@ header {
 header h1 {
     font-size: 2em;
     display: inline;
+    padding-left: 15%;
 }
 
 .recargar {
@@ -24,10 +25,11 @@ header h1 {
 }
 
 main {
+    padding-top: 2em;
     background-color: lightblue;
     position: flex;
     margin: 0px;
-    height: 70%;
+    height: 85%;
 }
 
 .Formularios {
@@ -71,9 +73,10 @@ main {
     border-width: 2px;
 }
 
-.advertencia {
-    display: block;
-    font-size: 0.7em;
+.marca-advertencia{
+    display: flex;
+    padding-top: 1em;
+    padding-left: 15%;
 }
 
 .botones-interaccion {
