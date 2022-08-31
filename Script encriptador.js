@@ -49,6 +49,15 @@ function desencriptar(stringSalida)
     return stringSalida;
 }
 
-function copiar() {
-    
+function copiar() 
+{
+    textoResultado.select();
+    navigator.clipboard.writeText(textoResultado.value);
+    textoResultado.value = "";
+    alert("Texto copiado con exito");
+    ponleFocus();
+}
+
+function ponleFocus(){
+    document.getElementById("input1").focus();
 }
