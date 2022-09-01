@@ -10,8 +10,8 @@ html, body {
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color:darkblue;
-    border-radius: 12px;
+    background-color:rgb(60, 60, 156);
+    border-radius: 22px;
 }
 
 header {
@@ -58,7 +58,6 @@ main {
     width: 90%;
     height: 70%;
     border-radius: 15px;
-    background-color: rgb(163, 227, 243);
     resize: none;
     font-size: 1.5em;
     color: darkblue;
@@ -76,7 +75,10 @@ main {
     width: 90%;
     height: 70%;
     border-radius: 15px;
-    background-color: rgb(163, 227, 243);
+    background-image: url(Imagenes/mensaje.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px;
     resize: none;
     font-size: 1.5em;
     color: darkblue;

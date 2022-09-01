@@ -2,14 +2,16 @@ const entradaTexto = document.querySelector(".text-input") ;
 const textoResultado = document.querySelector(".texto-salida");
 
 function botonEncriptar()
-{
+{   
+    document.getElementById("salida").style.background = "white";
     const textoEncriptado = encriptar(entradaTexto.value);
     entradaTexto.value = "";
     textoResultado.value = textoEncriptado;
 }
 
 function botonDesencriptar()
-{
+{   
+    document.getElementById("salida").style.background = "white";
     const textoDesencriptado = desencriptar(entradaTexto.value);
     entradaTexto.value = "";
     textoResultado.value = textoDesencriptado;
