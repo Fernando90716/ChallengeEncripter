@@ -5,17 +5,17 @@ html, body {
 }
 
 ::-webkit-scrollbar{
-    background-color: lightblue;
+    background-color: #E9ECF8;
     width: 0.5em;
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color:rgb(60, 60, 156);
+    background-color:blue;
     border-radius: 22px;
 }
 
 header {
-    background-color: lightblue;
+    background-color: #E9ECF8;
     padding: 3em 0px;
 }
 
@@ -36,7 +36,7 @@ header h1 {
 
 main {
     padding-top: 2em;
-    background-color: lightblue;
+    background-color: #E9ECF8;
     position: flex;
     margin: 0px;
     height: 85%;
@@ -97,8 +97,46 @@ main {
     text-align: center;
 }
 
+.boton{
+    width: 20%;
+    padding: 15px 0;
+    margin: 0 2em;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(54, 178, 219);
+    border: none;
+    border-radius: 20px;
+    transition: 0.4s all;
+    cursor: pointer;
+}
+
+.boton-copiar{
+    width: 20%;
+    padding: 15px 0;
+    margin: 0 2em;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 20px;
+    transition: 0.4s all;
+    cursor: pointer;
+}
+
+.boton-copiar:hover{
+    background-color: darkorange;
+    transform: scale(1.1);
+}
+
+.boton:hover{
+    background-color: blue;
+    transform: scale(1.1);
+}
+
 footer {
-    background-color: lightblue;
+    background-color: #E9ECF8;
     text-align: center;
     padding: 2em 0;
 }
